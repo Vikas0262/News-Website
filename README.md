@@ -1,2 +1,2 @@
 # News-Website
-News Website FetchingNews From API
+News Website Fetching News From API
