@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News HUB</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="main-nav flex container">
+                <div class="company-logo">
+                    <a href="#" onclick="reload()" class="logo">News<span class="span">.</span></a>
+                </div>
+                <div class="nav-links" id="nav-links">
+                    <ul class="list-items flex navbar">
+                        <li class="nav-item hover-link" id="technology" onclick="onNavItemClick('technology')"><a
+                                href="#">Technology</a>
+                        </li>
+                        <li class="nav-item hover-link" id="food" onclick="onNavItemClick('food')"><a href="#">Food</a>
+                        </li>
+                        <li class="nav-item hover-link" id="business" onclick="onNavItemClick('business')"><a
+                                href="#">Business</a></li>
+                        <li class="nav-item hover-link" id="politics" onclick="onNavItemClick('politics')"><a
+                                href="#">Politics</a></li>
+                        <li class="nav-item hover-link" id="education" onclick="onNavItemClick('education')"><a
+                                href="#">Education</a></li>
+                    </ul>
+                </div>
+
+                <div class="search-bar ">
+                    <input id="search-text" type="text" class="news-input search-input" placeholder="e.g. IPL">
+                    <button id="search-button" class="search-button"><i class="fas fa-search"></i></button>
+                </div>
+
+                <div class="checkbtn" id="nav-toggle">
+                    <i class="fa-solid fa-bars" id="menu-icon"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="main-section">
+        <div class="cards-container flex container" id="cards-container">
+
+        </div>
+    </main>
+
+    <!-- <template> to hold some content that will be hidden when the page loads  -->
+    <div class="container">
+        <template id="template-news-card">
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://via.placeholder.com/400x200" alt="News Image" id="news-img" />
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">This is the Title</h3>
+                    <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                    <p class="news-desc" id="news-desc">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
+                        cum tempora a atque, eveniet quasi ipsa. Labore doloribus laborum
+                        similique.
+                    </p>
+                </div>
+            </div>
+        </template>
+    </div>
+
+
+    <footer></footer>
+
+    <script>
+        let menu = document.querySelector('#menu-icon');
+        let navlist = document.querySelector('.nav-links');
+        menu.onclick = () => {
+            menu.classList.toggle('fa-xmark');
+            navlist.classList.toggle('open');
+        }
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
