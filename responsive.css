@@ -64,7 +64,8 @@
     }
 
     .card {
-        width: calc(50% - 12px);
+        /* width: calc(50% - 12px); */
+        width: 10%;
     }
 
     .card-header img {

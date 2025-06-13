@@ -78,6 +78,22 @@
 
     <footer></footer>
 
+    <!-- Modal for detailed news view -->
+    <div id="newsModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="" alt="News Image" id="modal-image">
+                <span class="modal-close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <h2 class="modal-title" id="modal-title"></h2>
+                <div class="modal-source" id="modal-source"></div>
+                <p class="modal-description" id="modal-description"></p>
+                <a href="#" class="read-more" id="read-more" target="_blank">Read Full Article</a>
+            </div>
+        </div>
+    </div>
+
     <script>
         let menu = document.querySelector('#menu-icon');
         let navlist = document.querySelector('.nav-links');
